@@ -1,0 +1,15 @@
+.batch-progress {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 220px;
+
+  mat-progress-bar {
+    width: 120px;
+  }
+}
+
+.progress-text {
+  font-size: 13px;
+  white-space: nowrap;
+}

@@ -1,0 +1,17 @@
+<div class="field-panel">
+  <div class="field-panel-header">
+    <h3>Felismert mezők</h3>
+    <button mat-stroked-button color="primary" (click)="markDocumentReviewed()">
+      <mat-icon>done_all</mat-icon>
+      Dokumentum ellenőrizve
+    </button>
+  </div>
+
+  <div class="field-list">
+    @for (field of labeledFields(); track field.fieldId) {
+      <app-field-editor [field]="field" />
+    } @empty {
+      <p class="empty-hint">Ehhez a dokumentumhoz nincs felismert mező.</p>
+    }
+  </div>
+</div>

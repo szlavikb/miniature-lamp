@@ -1,0 +1,49 @@
+.field-editor {
+  padding: 4px 8px;
+  border-left: 3px solid transparent;
+
+  &[data-status='flagged'] {
+    border-left-color: #c62828;
+  }
+  &[data-status='low-confidence'] {
+    border-left-color: #ef6c00;
+  }
+  &[data-status='ok'] {
+    border-left-color: #2e7d32;
+  }
+}
+
+.field-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.field-input {
+  flex: 1;
+}
+
+.status-chip {
+  margin-top: 8px;
+  font-size: 11px;
+  min-height: 22px;
+
+  &[data-status='ok'] {
+    background: #e6f4ea;
+    color: #2e7d32;
+  }
+  &[data-status='flagged'] {
+    background: #fdecea;
+    color: #c62828;
+  }
+  &[data-status='low-confidence'] {
+    background: #fff3e0;
+    color: #ef6c00;
+  }
+}
+
+.ai-hint {
+  margin: 0 0 8px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+}

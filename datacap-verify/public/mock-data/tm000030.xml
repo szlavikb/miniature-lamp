@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Minta mezőadat a QR_kodos_tajekoztato dokumentumtípushoz - generált
+  értékekkel, a valós Datacap mező-XML felépítését követve.
+-->
+<P id="TM000030">
+  <!-- Üres, kötelező mező: STATUS=1, de nincs felismert érték -->
+  <F id="qrDocSurname">
+    <V n="TYPE">qrDocSurname</V>
+    <V n="Position">0,0,0,0</V>
+    <V n="STATUS">1</V>
+    <V n="MESSAGE">A Családi_név mező üres (2)</V>
+    <V n="VALIDATION_ERROR_CODES">2</V>
+    <F id="qrDocSurname_confidenceLevel">
+      <V n="TYPE">qrDocSurname_confidenceLevel</V>
+      <V n="Position">0,0,0,0</V>
+      <V n="STATUS">0</V>
+    </F>
+    <F id="qrDocSurname_errorMessage">
+      <V n="TYPE">qrDocSurname_errorMessage</V>
+      <V n="Position">0,0,0,0</V>
+      <V n="STATUS">0</V>
+    </F>
+    <F id="qrDocSurname_comment">
+      <V n="TYPE">qrDocSurname_comment</V>
+      <V n="Position">0,0,0,0</V>
+      <V n="STATUS">0</V>
+    </F>
+    <F id="qrDocSurname_AIRecognition">
+      <V n="TYPE">qrDocSurname_AIRecognition</V>
+      <V n="Position">0,0,0,0</V>
+      <V n="STATUS">0</V>
+    </F>
+  </F>
+
+  <F id="qrDocPlaceOfSigning">
+    <V n="TYPE">qrDocPlaceOfSigning</V>
+    <V n="Position">0,0,0,0</V>
+    <V n="STATUS">1</V>
+    <V n="ReqConf">9</V>
+    <V n="MESSAGE">Keltezés_helye mező értéke ellentmondásos: nem szerepel az aláírás helye értékkészletben (2)</V>
+    <V n="VALIDATION_ERROR_CODES">2</V>
+    <C cn="10" cr="0,0,0,0">77</C><C cn="10" cr="0,0,0,0">73</C><C cn="10" cr="0,0,0,0">78</C><C cn="10" cr="0,0,0,0">84</C><C cn="10" cr="0,0,0,0">65</C><C cn="10" cr="0,0,0,0">86</C><C cn="10" cr="0,0,0,0">65</C><C cn="10" cr="0,0,0,0">82</C><C cn="10" cr="0,0,0,0">79</C><C cn="10" cr="0,0,0,0">83</C>
+    <F id="qrDocPlaceOfSigning_confidenceLevel">
+      <V n="TYPE">qrDocPlaceOfSigning_confidenceLevel</V>
+      <V n="Position">0,0,0,0</V>
+      <V n="STATUS">0</V>
+      <C cn="10" cr="0,0,0,0">57</C><C cn="10" cr="0,0,0,0">50</C><C cn="10" cr="0,0,0,0">37</C>
+    </F>
+    <F id="qrDocPlaceOfSigning_errorMessage">
+      <V n="TYPE">qrDocPlaceOfSigning_errorMessage</V>
+      <V n="Position">0,0,0,0</V>
+      <V n="STATUS">0</V>
+    </F>
+    <F id="qrDocPlaceOfSigning_comment">
+      <V n="TYPE">qrDocPlaceOfSigning_comment</V>
+      <V n="Position">0,0,0,0</V>
+      <V n="STATUS">0</V>
+    </F>
+    <F id="qrDocPlaceOfSigning_AIRecognition">
+      <V n="TYPE">qrDocPlaceOfSigning_AIRecognition</V>
+      <V n="Position">0,0,0,0</V>
+      <V n="STATUS">0</V>
+      <V n="fieldEntropy">0,81</V>
+      <V n="fieldConfidence">9,19</V>
+      <C cn="10" cr="0,0,0,0">77</C><C cn="10" cr="0,0,0,0">73</C><C cn="10" cr="0,0,0,0">78</C><C cn="10" cr="0,0,0,0">84</C><C cn="10" cr="0,0,0,0">65</C><C cn="10" cr="0,0,0,0">86</C><C cn="10" cr="0,0,0,0">65</C><C cn="10" cr="0,0,0,0">82</C><C cn="10" cr="0,0,0,0">79</C><C cn="10" cr="0,0,0,0">83</C>
+    </F>
+  </F>
+
+  <!-- Alacsony konfidenciájú mező: STATUS rendben (0), de a konfidencia
+       (7,9) a megkövetelt szint (8) alatt van -->
+  <F id="qrDocDateOfSigning">
+    <V n="TYPE">qrDocDateOfSigning</V>
+    <V n="Position">0,0,0,0</V>
+    <V n="STATUS">0</V>
+    <V n="ReqConf">8</V>
+    <V n="MESSAGE"></V>
+    <V n="VALIDATION_ERROR_CODES"></V>
+    <C cn="10" cr="0,0,0,0">50</C><C cn="10" cr="0,0,0,0">48</C><C cn="10" cr="0,0,0,0">50</C><C cn="10" cr="0,0,0,0">55</C><C cn="10" cr="0,0,0,0">46</C><C cn="10" cr="0,0,0,0">48</C><C cn="10" cr="0,0,0,0">50</C><C cn="10" cr="0,0,0,0">46</C><C cn="10" cr="0,0,0,0">49</C><C cn="10" cr="0,0,0,0">48</C>
+    <F id="qrDocDateOfSigning_confidenceLevel">
+      <V n="TYPE">qrDocDateOfSigning_confidenceLevel</V>
+      <V n="Position">0,0,0,0</V>
+      <V n="STATUS">0</V>
+      <C cn="10" cr="0,0,0,0">55</C><C cn="10" cr="0,0,0,0">57</C><C cn="10" cr="0,0,0,0">37</C>
+    </F>
+    <F id="qrDocDateOfSigning_errorMessage">
+      <V n="TYPE">qrDocDateOfSigning_errorMessage</V>
+      <V n="Position">0,0,0,0</V>
+      <V n="STATUS">0</V>
+    </F>
+    <F id="qrDocDateOfSigning_comment">
+      <V n="TYPE">qrDocDateOfSigning_comment</V>
+      <V n="Position">0,0,0,0</V>
+      <V n="STATUS">0</V>
+    </F>
+    <F id="qrDocDateOfSigning_AIRecognition">
+      <V n="TYPE">qrDocDateOfSigning_AIRecognition</V>
+      <V n="Position">0,0,0,0</V>
+      <V n="STATUS">0</V>
+      <V n="fieldEntropy">2,09</V>
+      <V n="fieldConfidence">7,91</V>
+      <C cn="10" cr="0,0,0,0">50</C><C cn="10" cr="0,0,0,0">48</C><C cn="10" cr="0,0,0,0">50</C><C cn="10" cr="0,0,0,0">55</C><C cn="10" cr="0,0,0,0">46</C><C cn="10" cr="0,0,0,0">48</C><C cn="10" cr="0,0,0,0">50</C><C cn="10" cr="0,0,0,0">46</C><C cn="10" cr="0,0,0,0">49</C><C cn="10" cr="0,0,0,0">48</C>
+    </F>
+  </F>
+
+  <F id="qrDocVerzioPage1">
+    <V n="TYPE">qrDocVerzioPage1</V>
+    <V n="Position">0,0,0,0</V>
+    <V n="STATUS">1</V>
+    <V n="ReqConf">10</V>
+    <V n="MESSAGE">Dokumentum_verziószám_1.o mező értéke ellentmondásos: a keltezés dátuma nincs a verzió érvényességi időszakában</V>
+    <V n="VALIDATION_ERROR_CODES">2</V>
+    <C cn="10" cr="0,0,0,0">72</C><C cn="10" cr="0,0,0,0">75</C><C cn="10" cr="0,0,0,0">95</C><C cn="10" cr="0,0,0,0">81</C><C cn="10" cr="0,0,0,0">82</C><C cn="10" cr="0,0,0,0">95</C><C cn="10" cr="0,0,0,0">50</C><C cn="10" cr="0,0,0,0">48</C><C cn="10" cr="0,0,0,0">50</C><C cn="10" cr="0,0,0,0">55</C><C cn="10" cr="0,0,0,0">48</C><C cn="10" cr="0,0,0,0">50</C><C cn="10" cr="0,0,0,0">48</C><C cn="10" cr="0,0,0,0">49</C>
+    <F id="qrDocVerzioPage1_confidenceLevel">
+      <V n="TYPE">qrDocVerzioPage1_confidenceLevel</V>
+      <V n="Position">0,0,0,0</V>
+      <V n="STATUS">0</V>
+      <C cn="10" cr="0,0,0,0">57</C><C cn="10" cr="0,0,0,0">56</C><C cn="10" cr="0,0,0,0">37</C>
+    </F>
+    <F id="qrDocVerzioPage1_errorMessage">
+      <V n="TYPE">qrDocVerzioPage1_errorMessage</V>
+      <V n="Position">0,0,0,0</V>
+      <V n="STATUS">0</V>
+    </F>
+    <F id="qrDocVerzioPage1_comment">
+      <V n="TYPE">qrDocVerzioPage1_comment</V>
+      <V n="Position">0,0,0,0</V>
+      <V n="STATUS">0</V>
+    </F>
+    <F id="qrDocVerzioPage1_AIRecognition">
+      <V n="TYPE">qrDocVerzioPage1_AIRecognition</V>
+      <V n="Position">0,0,0,0</V>
+      <V n="STATUS">0</V>
+      <V n="fieldEntropy">0,23</V>
+      <V n="fieldConfidence">9,77</V>
+      <C cn="10" cr="0,0,0,0">72</C><C cn="10" cr="0,0,0,0">75</C><C cn="10" cr="0,0,0,0">95</C><C cn="10" cr="0,0,0,0">81</C><C cn="10" cr="0,0,0,0">82</C><C cn="10" cr="0,0,0,0">95</C><C cn="10" cr="0,0,0,0">50</C><C cn="10" cr="0,0,0,0">48</C><C cn="10" cr="0,0,0,0">50</C><C cn="10" cr="0,0,0,0">55</C><C cn="10" cr="0,0,0,0">48</C><C cn="10" cr="0,0,0,0">50</C><C cn="10" cr="0,0,0,0">48</C><C cn="10" cr="0,0,0,0">49</C>
+    </F>
+  </F>
+
+  <!-- Üres, opcionális mező (STATUS rendben) -->
+  <F id="qrDocPrefix">
+    <V n="TYPE">qrDocPrefix</V>
+    <V n="Position">0,0,0,0</V>
+    <V n="STATUS">0</V>
+    <V n="MESSAGE"></V>
+    <V n="VALIDATION_ERROR_CODES"></V>
+    <F id="qrDocPrefix_confidenceLevel">
+      <V n="TYPE">qrDocPrefix_confidenceLevel</V>
+      <V n="Position">0,0,0,0</V>
+      <V n="STATUS">0</V>
+    </F>
+    <F id="qrDocPrefix_errorMessage">
+      <V n="TYPE">qrDocPrefix_errorMessage</V>
+      <V n="Position">0,0,0,0</V>
+      <V n="STATUS">0</V>
+    </F>
+    <F id="qrDocPrefix_comment">
+      <V n="TYPE">qrDocPrefix_comment</V>
+      <V n="Position">0,0,0,0</V>
+      <V n="STATUS">0</V>
+    </F>
+    <F id="qrDocPrefix_AIRecognition">
+      <V n="TYPE">qrDocPrefix_AIRecognition</V>
+      <V n="Position">0,0,0,0</V>
+      <V n="STATUS">0</V>
+    </F>
+  </F>
+</P>

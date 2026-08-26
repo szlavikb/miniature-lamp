@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Ez a fájl a valós Datacap batch "verify.xml" (batch index) felépítését
+  követi (lásd \\datacap-02.barretest.local\Datacap\DMAICreditCardClaim\
+  batches\20260817.000001\verify.xml): <B> a batch, <D TYPE="..."> egy-egy
+  dokumentum, <P> a dokumentum oldalai. A DATAFILE attribútum mutat a
+  dokumentumhoz tartozó, felismert mezőket tartalmazó XML-re (lásd
+  tm000015.xml, tm000030.xml). A dokumentumazonosítók, oldalak és
+  kommentek a valós batchből származó, kis részletet tartalmazó minta.
+-->
+<B id="20260817.000001">
+  <D id="20260817.000001.04" TYPE="Szemelyi_igazolvany">
+    <P id="TM000015" IMAGEFILE="tm000015.svg" STATUS="0" DATAFILE="tm000015.xml"
+       COMMENTS="Sérült okmány; Dokumentum nem megfelelő oldalal; Nem megfelelő oldalszám sorrend." />
+    <P id="TM000016" IMAGEFILE="tm000016.svg" STATUS="0" />
+  </D>
+  <D id="20260817.000001.06" TYPE="QR_kodos_tajekoztato">
+    <P id="TM000030" IMAGEFILE="tm000030.svg" STATUS="0" DATAFILE="tm000030.xml"
+       COMMENTS="Nem megfelelő oldalszám sorrend." />
+    <P id="TM000031" IMAGEFILE="tm000031.svg" STATUS="1" />
+  </D>
+  <D id="20260817.000001.03" TYPE="Lakcimkartya">
+    <P id="TM000014" IMAGEFILE="tm000014.svg" STATUS="0"
+       COMMENTS="Nem megfelelő oldalszám sorrend.; Lakcímkártya hátlap nem megengedett" />
+  </D>
+</B>

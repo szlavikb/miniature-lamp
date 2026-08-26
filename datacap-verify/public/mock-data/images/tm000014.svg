@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="380" viewBox="0 0 600 380">
+  <rect width="600" height="380" fill="#f2f0f7" stroke="#9a90ae" stroke-width="2"/>
+  <text x="300" y="60" font-family="sans-serif" font-size="20" text-anchor="middle" fill="#382f44">Lakcímkártya</text>
+  <text x="300" y="90" font-family="sans-serif" font-size="14" text-anchor="middle" fill="#5f5771">előlap - TM000014 (nincs felismert mező)</text>
+  <text x="300" y="200" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#9a90ae">(minta kép - nem valós dokumentum)</text>
+</svg>

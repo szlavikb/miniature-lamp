@@ -1,0 +1,21 @@
+<mat-toolbar color="primary" class="verify-toolbar">
+  <span class="batch-title">Batch: {{ batch()?.id ?? '...' }}</span>
+  <span class="spacer"></span>
+  <app-batch-progress />
+</mat-toolbar>
+
+@if (loading()) {
+  <div class="loading-state">Batch betöltése...</div>
+} @else {
+  <div class="verify-layout">
+    <aside class="pane pane-list">
+      <app-document-list />
+    </aside>
+    <main class="pane pane-viewer">
+      <app-document-viewer />
+    </main>
+    <aside class="pane pane-fields">
+      <app-field-panel />
+    </aside>
+  </div>
+}

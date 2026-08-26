@@ -1,0 +1,44 @@
+@if (currentDocument(); as doc) {
+  <div class="viewer">
+    <div class="viewer-toolbar">
+      <button mat-icon-button (click)="previousDocument()" [disabled]="selectedDocIndex() === 0" matTooltip="Előző dokumentum">
+        <mat-icon>skip_previous</mat-icon>
+      </button>
+      <mat-chip class="doc-type-chip">{{ docTypeLabel(doc.docType) }}</mat-chip>
+      <span class="doc-id">{{ doc.id }}</span>
+      <button
+        mat-icon-button
+        (click)="nextDocument()"
+        [disabled]="selectedDocIndex() === documents().length - 1"
+        matTooltip="Következő dokumentum"
+      >
+        <mat-icon>skip_next</mat-icon>
+      </button>
+
+      @if (doc.pages.length > 1) {
+        <span class="spacer"></span>
+        <button mat-icon-button (click)="previousPage()" [disabled]="selectedPageIndex() === 0" matTooltip="Előző oldal">
+          <mat-icon>chevron_left</mat-icon>
+        </button>
+        <span class="page-indicator">{{ selectedPageIndex() + 1 }} / {{ doc.pages.length }}</span>
+        <button
+          mat-icon-button
+          (click)="nextPage()"
+          [disabled]="selectedPageIndex() === doc.pages.length - 1"
+          matTooltip="Következő oldal"
+        >
+          <mat-icon>chevron_right</mat-icon>
+        </button>
+      }
+    </div>
+
+    <div class="image-frame">
+      @if (currentPage(); as page) {
+        <img [src]="imageUrl(page.imageFile)" [alt]="page.id" />
+        @if (page.comments) {
+          <p class="page-comments">{{ page.comments }}</p>
+        }
+      }
+    </div>
+  </div>
+}

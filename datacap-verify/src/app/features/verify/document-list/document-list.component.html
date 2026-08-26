@@ -1,0 +1,30 @@
+<div class="document-list">
+  @for (doc of documents(); track doc.id; let docIndex = $index) {
+    <div class="document-group" [class.selected]="docIndex === selectedDocIndex()">
+      <button type="button" class="document-header" (click)="selectDocument(docIndex)">
+        <span class="status-dot" [attr.data-status]="docStatus()(docIndex)"></span>
+        <span class="doc-info">
+          <span class="doc-type">{{ docTypeLabel(doc.docType) }}</span>
+          <span class="doc-id">{{ doc.id }}</span>
+        </span>
+        <mat-chip class="page-count">{{ doc.pages.length }} oldal</mat-chip>
+      </button>
+
+      @if (docIndex === selectedDocIndex() && doc.pages.length > 1) {
+        <div class="page-list">
+          @for (page of doc.pages; track page.id; let pageIndex = $index) {
+            <button
+              type="button"
+              class="page-item"
+              [class.selected]="pageIndex === selectedPageIndex()"
+              (click)="selectPage(docIndex, pageIndex)"
+            >
+              <mat-icon>description</mat-icon>
+              {{ page.id }}
+            </button>
+          }
+        </div>
+      }
+    </div>
+  }
+</div>

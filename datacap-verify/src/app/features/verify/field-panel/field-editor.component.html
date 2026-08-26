@@ -1,0 +1,33 @@
+<div class="field-editor" [attr.data-status]="field.status">
+  <div class="field-row">
+    <mat-form-field appearance="outline" class="field-input">
+      <mat-label>{{ field.label }}</mat-label>
+      <input
+        matInput
+        [ngModel]="field.value"
+        (ngModelChange)="onValueChange($event)"
+        [attr.aria-label]="field.label"
+      />
+      @if (field.message) {
+        <mat-hint>{{ field.message }}</mat-hint>
+      }
+    </mat-form-field>
+
+    <mat-chip class="status-chip" [attr.data-status]="field.status">{{ statusLabel[field.status] }}</mat-chip>
+
+    <button
+      mat-icon-button
+      [color]="field.reviewed ? 'primary' : undefined"
+      (click)="markReviewed()"
+      [matTooltip]="field.reviewed ? 'Ellenőrizve' : 'Megjelölés ellenőrzöttként'"
+    >
+      <mat-icon>{{ field.reviewed ? 'check_circle' : 'radio_button_unchecked' }}</mat-icon>
+    </button>
+  </div>
+
+  @if (field.aiRecognition && field.aiRecognition.aiValue !== field.value) {
+    <p class="ai-hint" matTooltip="Az AI eredetileg felismert értéke">
+      AI érték: <strong>{{ field.aiRecognition.aiValue }}</strong> (bizonyosság: {{ field.aiRecognition.fieldConfidence | number: '1.1-1' }})
+    </p>
+  }
+</div>
