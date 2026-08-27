@@ -2,7 +2,13 @@
   @for (doc of documents(); track doc.id; let docIndex = $index) {
     <div class="document-group" [class.selected]="docIndex === selectedDocIndex()">
       <button type="button" class="document-header" (click)="selectDocument(docIndex)">
-        <span class="status-dot" [attr.data-status]="docStatus()(docIndex)"></span>
+        <span
+          class="status-dot"
+          [attr.data-status]="docStatus()(docIndex)"
+          [matTooltip]="docStatusLabel[docStatus()(docIndex)]"
+          role="img"
+          [attr.aria-label]="docStatusLabel[docStatus()(docIndex)]"
+        ></span>
         <span class="doc-info">
           <span class="doc-type">{{ docTypeLabel(doc.docType) }}</span>
           <span class="doc-id">{{ doc.id }}</span>

@@ -1,4 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
 
+:root {
+  --ink: #1b2430;
+  --ink-soft: #3a4657;
+  --paper: #faf9f6;
+  --surface: #ffffff;
+  --accent: #2f6fed;
+  --accent-tint: rgba(47, 111, 237, 0.08);
+  --ok: #1e7f4c;
+  --ok-tint: #e7f4ec;
+  --warn: #b4600a;
+  --warn-tint: #fbf0e2;
+  --danger: #c0392b;
+  --danger-tint: #fbeae8;
+  --neutral: #8a93a3;
+  --line: rgba(27, 36, 48, 0.1);
+  --font-ui: Inter, "Helvetica Neue", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  margin: 0;
+  font-family: var(--font-ui);
+  background: var(--paper);
+  color: var(--ink);
+}

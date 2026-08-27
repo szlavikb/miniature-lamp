@@ -2,13 +2,14 @@ import { Component, computed, inject } from '@angular/core';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { DOC_TYPE_LABELS } from '../../../data-access/datacap/models/batch.model';
 import { BatchStoreService } from '../../../state/batch-store.service';
 
 @Component({
   selector: 'app-document-list',
   standalone: true,
-  imports: [MatListModule, MatChipsModule, MatIconModule],
+  imports: [MatListModule, MatChipsModule, MatIconModule, MatTooltipModule],
   templateUrl: './document-list.component.html',
   styleUrl: './document-list.component.scss',
 })
@@ -20,6 +21,15 @@ export class DocumentListComponent {
   readonly selectedPageIndex = this.store.selectedPageIndex;
 
   readonly docTypeLabel = (docType: string) => DOC_TYPE_LABELS[docType] ?? docType;
+
+  readonly docStatusLabel: Record<string, string> = {
+    reviewed: 'Ellenőrizve',
+    flagged: 'Hibás mezőt tartalmaz',
+    'low-confidence': 'Alacsony bizonyosságú mezőt tartalmaz',
+    ok: 'Rendben',
+    'no-fields': 'Nincs felismert mező',
+    empty: 'Nincs adat',
+  };
 
   readonly docStatus = computed(() => (docIndex: number) => {
     const doc = this.documents()[docIndex];
